@@ -1,12 +1,6 @@
 import unittest
 
-import sys
-import os
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
-
-from main import calculate
-
-
+from src.main import calculate
 
 class TestCalculator(unittest.TestCase):
     def test_sum_simple(self):
