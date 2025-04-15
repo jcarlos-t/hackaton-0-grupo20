@@ -76,4 +76,5 @@ def calculate(expression: str) -> float:
     parts = expression.split(" + ")
     # Convertimos los elementos a flotantes y los sumamos
     return sum(float(part) for part in parts)
-
+def multiplicar(a, b):
+    return a*b
