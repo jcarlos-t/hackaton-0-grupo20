@@ -5,6 +5,8 @@ def dividir(a, b):
         raise ZeroDivisionError("Error: División por cero!")
     return a/b
 
+def multiplicar(a, b):
+    return a*b
 # Funciones para las operaciones
 def sumar(a, b):
     return a + b
@@ -81,5 +83,3 @@ def calculate(expression: str) -> float:
     parts = expression.split(" + ")
     # Convertimos los elementos a flotantes y los sumamos
     return sum(float(part) for part in parts)
-def multiplicar(a, b):
-    return a*b
