@@ -10,7 +10,7 @@ def sumar(a, b):
     return a + b
 
 def restar(a, b):
-    return ...
+    return a - b
 
 # Función principal de cálculo
 def calculate(expression):
