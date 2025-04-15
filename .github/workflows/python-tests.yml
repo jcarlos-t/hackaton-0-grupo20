@@ -26,7 +26,12 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt || true  # Si no hay requirements.txt, no falla
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-      - name: Run tests
-        run: python -m unittest tests.test
+      - name: Run tests if any
+        run: |
+          if compgen -G "tests/*.py" > /dev/null; then
+            python -m unittest discover -s tests
+          else
+            echo "No tests to run"
+          fi
