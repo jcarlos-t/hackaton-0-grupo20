@@ -1,4 +1,5 @@
 def main():
+    #xd
     print("Calculadora de Sumas (escribe 'c' para borrar, 'q' para salir)")
     while True:
         entrada = input("Escribe una operación (ej: 2 + 2): ").strip()
