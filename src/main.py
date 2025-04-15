@@ -1,5 +1,10 @@
 import re
 
+def dividir(a, b):
+    if b == 0:
+        raise ZeroDivisionError("Error: División por cero!")
+    return a/b
+
 # Funciones para las operaciones
 def sumar(a, b):
     return a + b
